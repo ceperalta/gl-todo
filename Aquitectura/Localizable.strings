@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Aquitectura
+
+  Created by Carlos Peralta on 24/8/15.
+  Copyright (c) 2015 Eduardo Pujol. All rights reserved.
+*/
+
+// Generales
+"General_validacion" = "Validación";
+"General_completarTodosLosCampos" = "Debe completar todos los campos";
+"General_aceptar" = "Aceptar";
+
+// Login
+"Login_TituloAlertaLoginIncorrecto" = "Login incorrecto";
+"Login_MensajeLoginIncorrecto" = "Clave y/o Usuario incorrecto";
+"Login_AceptarLoginIncorrect" = "Aceptar";
+"Login_ControlandoLogin" = "Ingresando...";
+
+
+// Crear cuenta
+"CrearCuenta_TituloClavesNoCoinciden" = "Clave incorrectas";
+"CrearCuenta_ClavesNoCoinciden" = "Las claves no coinciden";
+"CrearCuenta_creandoCuenta" = "Creando cuenta...";
+"CrearCuenta_creada" = "Su cuenta fue creada.";
+
+// DAO
+"DAO_errorGeneralConexion" = "Hubo un problema general en la conexión. Disculpe. Intente más tarde por favor.";
+
+
+

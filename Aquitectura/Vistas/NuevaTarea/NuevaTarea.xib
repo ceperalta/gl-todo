@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NuevaTarea">
+            <connections>
+                <outlet property="agregarNuevaTareaUIButton" destination="SWv-0r-m9D" id="3hX-fZ-e8R"/>
+                <outlet property="cargardorSobreAgregarUIActivityIndicatorView" destination="KKF-5s-6s6" id="iJR-Mq-KGd"/>
+                <outlet property="categoriaUIPickerView" destination="NO2-h9-AK1" id="ZgY-ZD-NPY"/>
+                <outlet property="nuevaCategoriaUITextField" destination="CXb-1Y-c1f" id="IzI-hr-onO"/>
+                <outlet property="nuevaTareaUITextField" destination="hLB-fN-b2t" id="GQo-cu-8gm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-sa-XRJ">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="[X]">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cerrarVentanaNuevaTareaUIButton_presionado:" destination="-1" eventType="touchUpInside" id="r0C-hV-z4a"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nueva tarea" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLB-fN-b2t">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-h9-AK1">
+                    <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </pickerView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nueva categoría" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-1Y-c1f">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWv-0r-m9D">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Agregar">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="agregarTareaUIButton_presionado:" destination="-1" eventType="touchUpInside" id="9oH-oE-Qvi"/>
+                    </connections>
+                </button>
+                <activityIndicatorView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KKF-5s-6s6">
+                    <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SWv-0r-m9D" firstAttribute="top" secondItem="CXb-1Y-c1f" secondAttribute="bottom" constant="8" id="0b4-fZ-s4K">
+                    <variation key="heightClass=regular-widthClass=compact" constant="54"/>
+                </constraint>
+                <constraint firstItem="NO2-h9-AK1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="0pH-NI-y59">
+                    <variation key="heightClass=regular-widthClass=compact" constant="77"/>
+                </constraint>
+                <constraint firstItem="hLB-fN-b2t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="AW3-9C-Kxw">
+                    <variation key="heightClass=regular-widthClass=compact" constant="59"/>
+                </constraint>
+                <constraint firstItem="jbg-sa-XRJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="CE8-r3-YtE"/>
+                <constraint firstAttribute="trailing" secondItem="NO2-h9-AK1" secondAttribute="trailing" constant="212" id="OtH-Q0-lPU">
+                    <variation key="heightClass=regular-widthClass=compact" constant="165"/>
+                </constraint>
+                <constraint firstItem="NO2-h9-AK1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="PkX-ZA-1b7"/>
+                <constraint firstAttribute="trailing" secondItem="SWv-0r-m9D" secondAttribute="trailing" constant="8" id="Qxi-7t-Qep"/>
+                <constraint firstAttribute="trailing" secondItem="hLB-fN-b2t" secondAttribute="trailing" constant="8" id="Tn2-Dw-F7H"/>
+                <constraint firstItem="jbg-sa-XRJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="YEz-KL-Ofe">
+                    <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                </constraint>
+                <constraint firstItem="KKF-5s-6s6" firstAttribute="top" secondItem="CXb-1Y-c1f" secondAttribute="bottom" constant="59" id="hu5-4l-Yb4"/>
+                <constraint firstItem="CXb-1Y-c1f" firstAttribute="leading" secondItem="NO2-h9-AK1" secondAttribute="trailing" constant="8" id="iO5-d2-kvE"/>
+                <constraint firstItem="KKF-5s-6s6" firstAttribute="leading" secondItem="NO2-h9-AK1" secondAttribute="trailing" constant="120" id="iOP-Df-eDk"/>
+                <constraint firstItem="SWv-0r-m9D" firstAttribute="leading" secondItem="NO2-h9-AK1" secondAttribute="trailing" constant="103" id="msr-BO-pcC"/>
+                <constraint firstItem="CXb-1Y-c1f" firstAttribute="top" secondItem="hLB-fN-b2t" secondAttribute="bottom" constant="8" id="oRW-LQ-cXd">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="hLB-fN-b2t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="pDf-GG-3Hk"/>
+                <constraint firstAttribute="trailing" secondItem="CXb-1Y-c1f" secondAttribute="trailing" constant="8" id="y3Z-PP-xE0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="jbg-sa-XRJ"/>
+                    <exclude reference="hLB-fN-b2t"/>
+                    <exclude reference="NO2-h9-AK1"/>
+                    <exclude reference="CXb-1Y-c1f"/>
+                    <exclude reference="SWv-0r-m9D"/>
+                    <exclude reference="KKF-5s-6s6"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="CE8-r3-YtE"/>
+                    <exclude reference="YEz-KL-Ofe"/>
+                    <exclude reference="AW3-9C-Kxw"/>
+                    <exclude reference="Tn2-Dw-F7H"/>
+                    <exclude reference="pDf-GG-3Hk"/>
+                    <exclude reference="0pH-NI-y59"/>
+                    <exclude reference="OtH-Q0-lPU"/>
+                    <exclude reference="PkX-ZA-1b7"/>
+                    <exclude reference="iO5-d2-kvE"/>
+                    <exclude reference="oRW-LQ-cXd"/>
+                    <exclude reference="y3Z-PP-xE0"/>
+                    <exclude reference="0b4-fZ-s4K"/>
+                    <exclude reference="Qxi-7t-Qep"/>
+                    <exclude reference="msr-BO-pcC"/>
+                    <exclude reference="hu5-4l-Yb4"/>
+                    <exclude reference="iOP-Df-eDk"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="jbg-sa-XRJ"/>
+                    <include reference="hLB-fN-b2t"/>
+                    <include reference="NO2-h9-AK1"/>
+                    <include reference="CXb-1Y-c1f"/>
+                    <include reference="SWv-0r-m9D"/>
+                    <include reference="KKF-5s-6s6"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="CE8-r3-YtE"/>
+                    <include reference="YEz-KL-Ofe"/>
+                    <include reference="AW3-9C-Kxw"/>
+                    <include reference="Tn2-Dw-F7H"/>
+                    <include reference="pDf-GG-3Hk"/>
+                    <include reference="0pH-NI-y59"/>
+                    <include reference="OtH-Q0-lPU"/>
+                    <include reference="PkX-ZA-1b7"/>
+                    <include reference="iO5-d2-kvE"/>
+                    <include reference="oRW-LQ-cXd"/>
+                    <include reference="y3Z-PP-xE0"/>
+                    <include reference="0b4-fZ-s4K"/>
+                    <include reference="Qxi-7t-Qep"/>
+                    <include reference="msr-BO-pcC"/>
+                    <include reference="hu5-4l-Yb4"/>
+                    <include reference="iOP-Df-eDk"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="208" y="135"/>
+        </view>
+    </objects>
+</document>
